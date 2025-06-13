@@ -1,1 +1,1 @@
-Vue.js project for my own personal site
+Project for my own personal website
