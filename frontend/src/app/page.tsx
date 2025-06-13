@@ -2,13 +2,13 @@ import Hero from '@/components/Hero';
 import About from '@/components/AboutMe';
 import ProjectsSection from '@/components/projects/ProjectsSection';
 import TableOfContents from '@/components/TableOfContents';
-import GitHubLink from '@/components/GitHubLink';
+import TopRightLinks from '@/components/TopRightLinks';
 
 export default function Home() {
   return (
     <>
       <TableOfContents />
-      <GitHubLink />
+      <TopRightLinks />
       <main className="">
         <section id="hero">
           <Hero />

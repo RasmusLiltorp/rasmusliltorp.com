@@ -28,7 +28,7 @@ export default function About() {
     <section className="w-full py-24 bg-background">
       <div className="container max-w-6xl px-6 mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Text Content */}
+
           <div className="space-y-6">
             <div className="space-y-2">
               <p className="text-sm uppercase text-muted-foreground tracking-wide">About me</p>
@@ -66,17 +66,16 @@ export default function About() {
               </div>
             </div>
 
-            {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6"> 
-              <Button asChild variant="outline" size="lg" className="font-semibold">
-                <Link href="/typing-game">
-                  Can you out-type me?
-                </Link>
-              </Button>
-            </div>
+        <Button asChild variant="outline" size="lg" className="font-semibold relative overflow-hidden">
+            <Link href="/typing-game" className="relative z-10">
+                Can you out-type me?
+                <div className="absolute inset-0 rounded-lg animate-pulse-border" />
+            </Link>
+        </Button>
+        </div>
           </div>
 
-          {/* Image */}
           <div className="lg:order-first flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden bg-muted">
@@ -89,7 +88,7 @@ export default function About() {
                   priority
                 />
               </div>
-              {/* Decorative element */}
+
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-blue-600/20 rounded-2xl -z-10 blur-xl opacity-70" />
             </div>
           </div>
