@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { 
   SiDotnet, 
   SiPostgresql, 
@@ -39,15 +37,15 @@ export default function About() {
             
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
             <p>
-                I'm a software engineering student who learns by building. Most of my experience is in backend development with C# and .NET, but I also work with TypeScript, Supabase, and modern frontend frameworks like Next.js.
+                I&rsquo;m a software engineering student who learns by building. Most of my experience is in backend development with C# and .NET, but I also work with TypeScript, Supabase, and modern frontend frameworks like Next.js.
             </p>
 
             <p>
-                I care about clean code, simple architecture, and systems that work. I'd rather build boring, fast tech than overengineer.
+                I care about clean code, simple architecture, and systems that work.
             </p>
 
             <p>
-                Right now I'm working on several side projects to sharpen my skills and explore what's possible.
+                Right now I&rsquo;m working on several side projects to sharpen my skills and explore what&rsquo;s possible.
             </p>
             </div>
 
@@ -56,7 +54,7 @@ export default function About() {
                 {technologies.map(({ name, icon: Icon }) => (
                   <div 
                     key={name}
-                    className="flex items-center gap-2 px-3 py-2 text-sm bg-muted text-muted-foreground rounded-lg font-medium hover:bg-muted/80 transition-colors"
+                    className="flex items-center gap-2 px-3 py-2 text-sm bg-muted text-muted-foreground rounded-lg font-mono hover:bg-muted/80 transition-colors"
                     title={name}
                   >
                     <Icon className="w-4 h-4" />
@@ -65,15 +63,6 @@ export default function About() {
                 ))}
               </div>
             </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 pt-6"> 
-        <Button asChild variant="outline" size="lg" className="font-semibold relative overflow-hidden">
-            <Link href="/typing-game" className="relative z-10">
-                Can you out-type me?
-                <div className="absolute inset-0 rounded-lg animate-pulse-border" />
-            </Link>
-        </Button>
-        </div>
           </div>
 
           <div className="lg:order-first flex justify-center lg:justify-end">

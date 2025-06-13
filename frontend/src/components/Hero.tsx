@@ -34,7 +34,7 @@ export default function Hero() {
             <Link href="https://github.com/RasmusLiltorp" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center text-sm 
             text-muted-foreground hover:text-foreground transition-colors animate-fade-in-up [animation-delay:1s]">
-                <Github className="w-4 h-4 mr-2" />github.com/RasmusLiltorp
+                <Github className="w-4 h-4 mr-2 font-mono" />github.com/RasmusLiltorp
             </Link>
         </div>
 

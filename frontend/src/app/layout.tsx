@@ -25,7 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`font-satoshi ${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{ fontFamily: 'Satoshi, system-ui, sans-serif' }}
       >
         {children}
       </body>
